@@ -1,4 +1,17 @@
-sudo apt-get install git
-git add archivo
-git commit -m "comentario"
-git push
+#java specific
+*.class
+
+#netbeans ignore personal stuff
+nbproject/
+
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
+# Package Files #
+*.jar
+*.war
+*.ear
