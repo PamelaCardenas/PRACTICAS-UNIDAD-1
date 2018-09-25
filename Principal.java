@@ -2,70 +2,40 @@
 import java.util.Scanner;
 
 /*
- * Práctica del examen diagnóstico, mostrar el mes de acuerdo al número ingresado
+ * Funcionamiento de clases y objetos
+ * Se instancia un objeto, para luego mostrar en donde se encuentra ubicado
  */
 
 /**
  *
- * @author Karla Pamela Cárdenas Leyva 18550338 
+ * @author KARLA PAMELA CÁRDENAS LEYVA 18550338
  */
 public class Principal {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) { //Metodo en el que se encuentra una clase String con un objeto args
         // TODO code application logic here
-        Scanner sCaptu = new Scanner(System.in); //Variable para captura del teclado
-        //Scanner es una clase para facilitar la lectura del teclado
-        //System.in es la entrada de perifericos de Java
+        //Crear objetos de clases: Instanciación
+        //(Instanciar un objeto de la clase necesita memoria)
+        //Declarar variable
+        //Nombre de la clase nombre del objeto
+        Principal pObjetoPpal;//Declarando el objeto
+        //Asignación de memoria (Crear la instancia)
+        pObjetoPpal = new Principal(); //Constructor
+        System.out.println("El objeto tiene: "+ pObjetoPpal);
         
-        //Comunicar al usuario las instrucciones
-        System.out.println("Introduce un número (1-12): ");
+        Principal pObj2 = new Principal(); //Instanciación
         
-        int nMes = sCaptu.nextInt(); //Lo que el usuario teclee, lo conviertimos a entero.
-        
-        switch(nMes) { //Verificamos el número
-            case 1: System.out.println("Enero"); 
-            break;
-            
-            case 2: System.out.println("Febrero"); 
-            break;
-            
-            case 3: System.out.println("Marzo"); 
-            break;
-           
-            case 4: System.out.println("Abril");
-            break;
-            
-            case 5: System.out.println("Mayo"); 
-            break;
-            
-            case 6: System.out.println("Junio"); 
-            break;
-            
-            case 7: System.out.println("Julio"); 
-            break;
-            
-            case 8: System.out.println("Agosto"); 
-            break;
-           
-            case 9: System.out.println("Septiembte"); 
-            break;
-            
-            case 10: System.out.println("Octubre"); 
-            break;
-            
-            case 11: System.out.println("Noviembre"); 
-            break;
-            
-            case 12: System.out.println("Diciembre"); 
-            break;
-            
-            default: //SIEMPRE AL FINAL, SIN BREAK
-                System.out.println("No existe el mes");
-            
-        }
+        Simple pObjSim1 = new Simple();
+        //Scanner
+        Scanner sCapu = new Scanner(System.in);
     }
     
 }
+//Clase sin estado (Variables)
+//Ni comportamiento (Metodos)
+ class Simple{ //Nombre de clase
+     
+ }
